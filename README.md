@@ -8,6 +8,9 @@ C# nuget 프로젝트의 소스코드입니다.
 	{
 		try
 		{
+			// API 상세설명 URL
+			// https://tilko.net/Help/Api/POST-api-apiVersion-Nhis-Ggpab003M0105
+
 			Tilko.API.REST _rest		= new Tilko.API.REST("API_KEY");
 			_rest.Init();
 
