@@ -1,9 +1,0 @@
-D:\DevSource\Tilko.Sample\CSharp\Tilko.API\Tilko.API\bin\Debug\Tilko.API.dll
-D:\DevSource\Tilko.Sample\CSharp\Tilko.API\Tilko.API\bin\Debug\Tilko.API.pdb
-D:\DevSource\Tilko.Sample\CSharp\Tilko.API\Tilko.API\bin\Debug\Newtonsoft.Json.dll
-D:\DevSource\Tilko.Sample\CSharp\Tilko.API\Tilko.API\bin\Debug\Newtonsoft.Json.xml
-D:\DevSource\Tilko.Sample\CSharp\Tilko.API\Tilko.API\obj\Debug\Tilko.API.csprojAssemblyReference.cache
-D:\DevSource\Tilko.Sample\CSharp\Tilko.API\Tilko.API\obj\Debug\Tilko.API.csproj.CoreCompileInputs.cache
-D:\DevSource\Tilko.Sample\CSharp\Tilko.API\Tilko.API\obj\Debug\Tilko.API.csproj.CopyComplete
-D:\DevSource\Tilko.Sample\CSharp\Tilko.API\Tilko.API\obj\Debug\Tilko.API.dll
-D:\DevSource\Tilko.Sample\CSharp\Tilko.API\Tilko.API\obj\Debug\Tilko.API.pdb
