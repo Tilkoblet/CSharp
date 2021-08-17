@@ -4,7 +4,7 @@ C# nuget 프로젝트의 소스코드입니다.
 아래는 건강보험공단의 건강검진결과 API를 호출하는 사용법입니다.
 
 
-[TestMethod]
+
 public void TestMethod1()
 {
 	try
