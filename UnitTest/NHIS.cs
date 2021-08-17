@@ -5,15 +5,20 @@ using System.IO;
 
 namespace UnitTest
 {
+	/// <summary>
+	/// 건강보험공단 테스트
+	/// </summary>
 	[TestClass]
 	public class NHIS
 	{
+		string _apiKey			= "API_KEY";
+
 		[TestMethod]
-		public void TestMethod1()
+		public void 건강검진결과()
 		{
 			try
 			{
-				Tilko.API.REST _rest		= new Tilko.API.REST("API_KEY");
+				Tilko.API.REST _rest		= new Tilko.API.REST(_apiKey);
 				_rest.Init();
 
 				// 건강보험공단의 건강검진결과 endPoint 설정
