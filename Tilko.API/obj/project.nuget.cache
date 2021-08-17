@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "XoS3VKuFPU3ZvojmzuVuCwVX6nshxCjJO/Ped8wC/zVi2hAHLUczjUD8h1TR5eVlR6toystBfFm52KLpwj6oPg==",
+  "success": true,
+  "projectFilePath": "D:\\DevSource\\Tilko.Sample\\CSharp\\Tilko.API\\Tilko.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joshua.son\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\joshua.son\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\joshua.son\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

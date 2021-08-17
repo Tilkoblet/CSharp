@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tilko.API2", "Tilko.API2\Tilko.API2.csproj", "{8B2EB6A5-6AE8-4ED5-99CD-A628457FF55C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tilko.API", "Tilko.API\Tilko.API.csproj", "{3190EF72-99CB-4411-B831-EEAF896AEF43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{238E6075-4763-4733-9C56-F22F0D26BDF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{238E6075-4763-4733-9C56-F22F0D26BDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{238E6075-4763-4733-9C56-F22F0D26BDF8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B2EB6A5-6AE8-4ED5-99CD-A628457FF55C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B2EB6A5-6AE8-4ED5-99CD-A628457FF55C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B2EB6A5-6AE8-4ED5-99CD-A628457FF55C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B2EB6A5-6AE8-4ED5-99CD-A628457FF55C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3190EF72-99CB-4411-B831-EEAF896AEF43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3190EF72-99CB-4411-B831-EEAF896AEF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3190EF72-99CB-4411-B831-EEAF896AEF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3190EF72-99CB-4411-B831-EEAF896AEF43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
