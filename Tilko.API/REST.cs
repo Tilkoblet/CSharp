@@ -185,6 +185,11 @@ namespace Tilko.API
         }
         #endregion
 
+        #region Call : API 결과 호출
+        /// <summary>
+        /// API 결과 호출
+        /// </summary>
+        /// <returns></returns>
         public string Call()
 		{
 			try
@@ -213,5 +218,6 @@ namespace Tilko.API
 				throw;
 			}
         }
+        #endregion
     }
 }

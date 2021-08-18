@@ -6,11 +6,9 @@ D:\DevSource\Tilko.Sample\CSharp\UnitTest\bin\Release\UnitTest.pdb
 D:\DevSource\Tilko.Sample\CSharp\UnitTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 D:\DevSource\Tilko.Sample\CSharp\UnitTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 D:\DevSource\Tilko.Sample\CSharp\UnitTest\bin\Release\Tilko.API.dll
-D:\DevSource\Tilko.Sample\CSharp\UnitTest\bin\Release\Newtonsoft.Json.dll
 D:\DevSource\Tilko.Sample\CSharp\UnitTest\bin\Release\Tilko.API.pdb
 D:\DevSource\Tilko.Sample\CSharp\UnitTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 D:\DevSource\Tilko.Sample\CSharp\UnitTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-D:\DevSource\Tilko.Sample\CSharp\UnitTest\bin\Release\Newtonsoft.Json.xml
 D:\DevSource\Tilko.Sample\CSharp\UnitTest\obj\Release\UnitTest.csprojAssemblyReference.cache
 D:\DevSource\Tilko.Sample\CSharp\UnitTest\obj\Release\UnitTest.csproj.CoreCompileInputs.cache
 D:\DevSource\Tilko.Sample\CSharp\UnitTest\obj\Release\UnitTest.csproj.CopyComplete

@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.23.21229</Version>
+    <Authors>Joshua Son</Authors>
+    <Company>Tilkoblet Corporation</Company>
+    <Description>초기 스타트업을 위한 손쉬운 보안 모듈 스크래핑 API 서비스 - http://tilko.net</Description>
+    <Copyright>Copyright © Tilkoblet Corporation 2019-2021</Copyright>
+    <PackageProjectUrl>https://github.com/Tilkoblet/CSharp</PackageProjectUrl>
+    <PackageTags>건강보험공단;국민연금관리공단;홈택스;위택스;정부24;경찰청교통민원24;전자가족관계등록시스템;자동차365;하이코리아;생명보험협회;한국신용정보원;인터넷등기소;고용산재토탈;</PackageTags>
+    <PackageReleaseNotes>각종 공공 및 금융기관의 공동인증서 로그인이 필요한 데이터 API 제공
+http://tilko.net</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
