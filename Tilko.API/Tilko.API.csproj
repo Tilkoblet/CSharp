@@ -12,6 +12,8 @@
     <PackageReleaseNotes>각종 공공 및 금융기관의 공동인증서 로그인이 필요한 데이터 API 제공
 http://tilko.net</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.24.21236</AssemblyVersion>
+    <FileVersion>1.0.24.21236</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

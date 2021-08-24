@@ -117,18 +117,44 @@ namespace Tilko.API
         /// <summary>
         /// API BODY에 들어갈 값을 추가합니다.
         /// </summary>
-        /// <param name="Key"></param>
-        /// <param name="Value"></param>
+        /// <param name="Key">Body에 삽입할 Key</param>
+        /// <param name="Value">Body에 삽입할 Value</param>
         public void AddBody(string Key, string Value)
 		{
 			try
 			{
+                this.AddBody(Key, Value, true);
+			}
+			catch
+			{
+				throw;
+			}
+        }
+        
+        /// <summary>
+        /// API BODY에 들어갈 값을 추가합니다.
+        /// </summary>
+        /// <param name="Key">Body에 삽입할 Key</param>
+        /// <param name="Value">Body에 삽입할 Value</param>
+        /// <param name="Encrypt">암호화 처리 여부</param>
+        public void AddBody(string Key, string Value, bool Encrypt)
+		{
+			try
+			{
                 if (_bodies.ContainsKey(Key))
                 {
                     throw new Exception("There is already the same key in bodies.");
                 }
-                byte[] _cipher      = _aes.Encrypt(_aesKey, _aesIv, Encoding.UTF8.GetBytes(Value));
-                _bodies.Add(Key, Convert.ToBase64String(_cipher));
+
+                if (Encrypt)
+                {
+                    byte[] _cipher      = _aes.Encrypt(_aesKey, _aesIv, Encoding.UTF8.GetBytes(Value));
+                    _bodies.Add(Key, Convert.ToBase64String(_cipher));
+                }
+                else
+                {
+                    _bodies.Add(Key, Value);
+                }
 			}
 			catch
 			{
@@ -139,22 +165,13 @@ namespace Tilko.API
         /// <summary>
         /// API BODY에 들어갈 값을 추가합니다.
         /// </summary>
-        /// <param name="Key"></param>
-        /// <param name="Value"></param>
+        /// <param name="Key">Body에 삽입할 Key</param>
+        /// <param name="Value">Body에 삽입할 Value</param>
         public void AddBody(string Key, int Value)
 		{
 			try
 			{
-                if (_bodies.ContainsKey(Key))
-                {
-                    throw new Exception("There is already the same key in bodies.");
-                }
-                byte[] _intBytes     = BitConverter.GetBytes(Value);
-                if (BitConverter.IsLittleEndian)
-                    Array.Reverse(_intBytes);
-                byte[] _result      = _intBytes;
-                byte[] _cipher      = _aes.Encrypt(_aesKey, _aesIv, _result);
-                _bodies.Add(Key, Convert.ToBase64String(_cipher));
+                this.AddBody(Key, Value, true);
 			}
 			catch
 			{
@@ -165,9 +182,10 @@ namespace Tilko.API
         /// <summary>
         /// API BODY에 들어갈 값을 추가합니다.
         /// </summary>
-        /// <param name="Key"></param>
-        /// <param name="Value"></param>
-        public void AddBody(string Key, byte[] Value)
+        /// <param name="Key">Body에 삽입할 Key</param>
+        /// <param name="Value">Body에 삽입할 Value</param>
+        /// <param name="Encrypt">암호화 처리 여부</param>
+        public void AddBody(string Key, int Value, bool Encrypt)
 		{
 			try
 			{
@@ -175,8 +193,65 @@ namespace Tilko.API
                 {
                     throw new Exception("There is already the same key in bodies.");
                 }
-                byte[] _cipher      = _aes.Encrypt(_aesKey, _aesIv, Value);
-                _bodies.Add(Key, Convert.ToBase64String(_cipher));
+
+                if (Encrypt)
+                {
+                    byte[] _intBytes     = BitConverter.GetBytes(Value);
+                    if (BitConverter.IsLittleEndian)
+                        Array.Reverse(_intBytes);
+                    byte[] _result      = _intBytes;
+                    byte[] _cipher      = _aes.Encrypt(_aesKey, _aesIv, _result);
+                    _bodies.Add(Key, Convert.ToBase64String(_cipher));
+                }
+                else
+                {
+                    _bodies.Add(Key, Value.ToString());
+                }
+			}
+			catch
+			{
+				throw;
+			}
+        }
+
+        /// <summary>
+        /// API BODY에 들어갈 값을 추가합니다.
+        /// </summary>
+        /// <param name="Key">Body에 삽입할 Key</param>
+        /// <param name="Value">Body에 삽입할 Value</param>
+        public void AddBody(string Key, byte[] Value)
+		{
+			try
+			{
+                this.AddBody(Key, Value, true);
+			}
+			catch
+			{
+				throw;
+			}
+        }
+
+        /// <summary>
+        /// API BODY에 들어갈 값을 추가합니다.
+        /// </summary>
+        /// <param name="Key">Body에 삽입할 Key</param>
+        /// <param name="Value">Body에 삽입할 Value</param>
+        /// <param name="Encrypt">암호화 처리 여부</param>
+        public void AddBody(string Key, byte[] Value, bool Encrypt)
+		{
+			try
+			{
+                if (_bodies.ContainsKey(Key))
+                {
+                    throw new Exception("There is already the same key in bodies.");
+                }
+
+                byte[] _value       = Value;
+                if (Encrypt)
+                {
+                    _value      = _aes.Encrypt(_aesKey, _aesIv, Value);
+                }
+                _bodies.Add(Key, Convert.ToBase64String(_value));
 			}
 			catch
 			{
