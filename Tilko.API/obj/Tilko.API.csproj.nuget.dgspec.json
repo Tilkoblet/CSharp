@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DevSource\\Tilko.Sample\\CSharp\\Tilko.API\\Tilko.API.csproj": {}
+    "D:\\DevSource\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj": {}
   },
   "projects": {
-    "D:\\DevSource\\Tilko.Sample\\CSharp\\Tilko.API\\Tilko.API.csproj": {
+    "D:\\DevSource\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj": {
       "version": "1.0.23.21229",
       "restore": {
-        "projectUniqueName": "D:\\DevSource\\Tilko.Sample\\CSharp\\Tilko.API\\Tilko.API.csproj",
+        "projectUniqueName": "D:\\DevSource\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
         "projectName": "Tilko.API",
-        "projectPath": "D:\\DevSource\\Tilko.Sample\\CSharp\\Tilko.API\\Tilko.API.csproj",
+        "projectPath": "D:\\DevSource\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
         "packagesPath": "C:\\Users\\joshua.son\\.nuget\\packages\\",
-        "outputPath": "D:\\DevSource\\Tilko.Sample\\CSharp\\Tilko.API\\obj\\",
+        "outputPath": "D:\\DevSource\\Tilko.Github\\CSharp\\Tilko.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
