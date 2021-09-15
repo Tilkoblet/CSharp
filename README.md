@@ -35,7 +35,6 @@ C# nuget 프로젝트의 소스코드입니다.
 
 			// API 호출
 			string _result				= _rest.Call();
-			//TEST
 		}
 		catch (Exception err)
 		{
