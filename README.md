@@ -28,10 +28,10 @@ C# nuget 프로젝트의 소스코드입니다.
 			byte[] _privateKey			= File.ReadAllBytes(_privatePath);
 				
 			// Body 추가
-			_rest.AddBody("CertFile", _publicCert);					// 자동으로 암호화 처리
-			_rest.AddBody("KeyFile", _privateKey);					// 자동으로 암호화 처리
-			_rest.AddBody("CertPassword", "공동인증서_비밀번호");	// 자동으로 암호화 처리
-			_rest.AddBody("평문", "test", false);					// 평문으로 전송
+			_rest.AddBody("CertFile", _publicCert, true);					// 암호화 처리가 필요한 변수는 마지막 파라미터를 true로 처리
+			_rest.AddBody("KeyFile", _privateKey, true);					// 암호화 처리가 필요한 변수는 마지막 파라미터를 true로 처리
+			_rest.AddBody("CertPassword", "공동인증서_비밀번호", true);		// 암호화 처리가 필요한 변수는 마지막 파라미터를 true로 처리
+			_rest.AddBody("평문", "test");									// 평문으로 전송
 
 			// API 호출
 			string _result				= _rest.Call();
