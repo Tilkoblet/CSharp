@@ -296,14 +296,16 @@ namespace Tilko.API
 
 					// 틸코 데이터 서버에 데이터 요청
 					var _reqContent				= new StringContent(JsonConvert.SerializeObject(_bodies), Encoding.UTF8, "application/json");
-					var _response				= _httpClient.PostAsync(_endPointUrl, _reqContent).Result;
-					var _resContent				= _response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                    using (var _response = _httpClient.PostAsync(_endPointUrl, _reqContent).Result)
+                    {
+                        var _resContent             = _response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
-                    // set public properties
-                    this.HttpStatusCode         = _response.StatusCode;
-                    this.Message                = _response.ReasonPhrase;
+                        // set public properties
+                        this.HttpStatusCode         = _response.StatusCode;
+                        this.Message                = _response.ReasonPhrase;
 
-					return _resContent.ToString();
+					    return _resContent.ToString();
+                    }
 				}
 			}
 			catch

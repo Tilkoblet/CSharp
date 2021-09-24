@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b2wSOfBB5O08QeqMXT/gNj5RZK0uuhZtapEQbHJppJW7y3p/TTGhG+ARhRLGhjzRXPnhN2aGXYEbSYzxmIwwnQ==",
+  "dgSpecHash": "iCNLKZ7+y3HAaUGExogf7rwI5dA9u6aqLYNxeoqxm3THU/4MQQDbiPDB5JjS/GtbyWXDC96v65leusBtcePeRA==",
   "success": true,
-  "projectFilePath": "D:\\DevSource\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
+  "projectFilePath": "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joshua.son\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\joshua.son\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
