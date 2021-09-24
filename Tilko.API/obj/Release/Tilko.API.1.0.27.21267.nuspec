@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Tilko.API</id>
-    <version>1.0.23.21229</version>
+    <version>1.0.27.21267</version>
     <authors>Joshua Son</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/Tilkoblet/CSharp</projectUrl>
