@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
 using System.Security.Cryptography;
 using System.Text;
@@ -24,14 +25,26 @@ namespace Tilko.API
         Tilko.API.Encryption.AES _aes       = new Tilko.API.Encryption.AES();
         Dictionary<string, string> _headers = new Dictionary<string, string>();
         Dictionary<string, string> _bodies  = new Dictionary<string, string>();
+		#endregion
+
+		#region Properties
+        /// <summary>
+        /// API 호출에 따른 HttpStatusCode
+        /// </summary>
+        public HttpStatusCode HttpStatusCode { get; private set; }
+
+        /// <summary>
+        /// 메시지
+        /// </summary>
+        public string Message { get; private set; }
         #endregion
 
-        #region REST : 생성자
-        /// <summary>
-        /// 생성자
-        /// </summary>
-        /// <param name="ApiKey">API키</param>
-        public REST(string ApiKey)
+		#region REST : 생성자
+		/// <summary>
+		/// 생성자
+		/// </summary>
+		/// <param name="ApiKey">API키</param>
+		public REST(string ApiKey)
         {
             if (string.IsNullOrEmpty(ApiKey))
             {
@@ -123,7 +136,7 @@ namespace Tilko.API
 		{
 			try
 			{
-                this.AddBody(Key, Value, false);
+                this.AddBody(Key, Value, true);
 			}
 			catch
 			{
@@ -148,8 +161,8 @@ namespace Tilko.API
 
                 if (Encrypt)
                 {
-                     byte[] _value      = _aes.Encrypt(_aesKey, _aesIv, Encoding.UTF8.GetBytes(Value));
-                    _bodies.Add(Key, Convert.ToBase64String(_value));
+                    byte[] _cipher      = _aes.Encrypt(_aesKey, _aesIv, Encoding.UTF8.GetBytes(Value));
+                    _bodies.Add(Key, Convert.ToBase64String(_cipher));
                 }
                 else
                 {
@@ -171,7 +184,7 @@ namespace Tilko.API
 		{
 			try
 			{
-                this.AddBody(Key, Value, false);
+                this.AddBody(Key, Value, true);
 			}
 			catch
 			{
@@ -199,8 +212,9 @@ namespace Tilko.API
                     byte[] _intBytes     = BitConverter.GetBytes(Value);
                     if (BitConverter.IsLittleEndian)
                         Array.Reverse(_intBytes);
-                     byte[] _value      = _aes.Encrypt(_aesKey, _aesIv, _intBytes);
-                    _bodies.Add(Key, Convert.ToBase64String(_value));
+                    byte[] _result      = _intBytes;
+                    byte[] _cipher      = _aes.Encrypt(_aesKey, _aesIv, _result);
+                    _bodies.Add(Key, Convert.ToBase64String(_cipher));
                 }
                 else
                 {
@@ -222,7 +236,7 @@ namespace Tilko.API
 		{
 			try
 			{
-                this.AddBody(Key, Value, false);
+                this.AddBody(Key, Value, true);
 			}
 			catch
 			{
@@ -284,6 +298,11 @@ namespace Tilko.API
 					var _reqContent				= new StringContent(JsonConvert.SerializeObject(_bodies), Encoding.UTF8, "application/json");
 					var _response				= _httpClient.PostAsync(_endPointUrl, _reqContent).Result;
 					var _resContent				= _response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+
+                    // set public properties
+                    this.HttpStatusCode         = _response.StatusCode;
+                    this.Message                = _response.ReasonPhrase;
+
 					return _resContent.ToString();
 				}
 			}
