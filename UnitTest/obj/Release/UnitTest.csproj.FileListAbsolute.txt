@@ -29,7 +29,4 @@ D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.csproj.CoreCompil
 D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.csproj.CopyComplete
 D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.dll
 D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.pdb
-D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\ko\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
-D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\ko\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
-D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
-D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.csproj.AssemblyReference.cache
+D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.csprojAssemblyReference.cache

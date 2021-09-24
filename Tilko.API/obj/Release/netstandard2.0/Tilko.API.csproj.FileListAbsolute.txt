@@ -14,3 +14,4 @@ D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Release\netstandard2.0\Tilko.API.
 D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Release\netstandard2.0\Tilko.API.csproj.CoreCompileInputs.cache
 D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Release\netstandard2.0\Tilko.API.dll
 D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Release\netstandard2.0\Tilko.API.pdb
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Release\netstandard2.0\Tilko.API.csprojAssemblyReference.cache
