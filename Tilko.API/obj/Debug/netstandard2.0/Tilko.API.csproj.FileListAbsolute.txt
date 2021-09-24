@@ -1,0 +1,9 @@
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\bin\Debug\netstandard2.0\Tilko.API.deps.json
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\bin\Debug\netstandard2.0\Tilko.API.dll
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\bin\Debug\netstandard2.0\Tilko.API.pdb
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.csproj.AssemblyReference.cache
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.AssemblyInfoInputs.cache
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.AssemblyInfo.cs
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.csproj.CoreCompileInputs.cache
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.dll
+D:\DevSource\Tilko.Github\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.pdb

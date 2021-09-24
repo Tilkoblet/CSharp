@@ -11,7 +11,7 @@ namespace UnitTest
 	[TestClass]
 	public class NHIS
 	{
-		string _apiKey			= "API_KEY";
+		string _apiKey			= "331c8e764a574886a4dce5567555a4d3";
 
 		[TestMethod]
 		public void 건강검진결과()
@@ -28,16 +28,17 @@ namespace UnitTest
 				 * 공동인증서 경로 설정
 				 * 공동인증서는 "C:\Users\[사용자계정]\AppData\LocalLow\NPKI\yessign\USER\[인증서DN명]"에 존재합니다.
 				 */
-				string _basePath			= Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\AppData\LocalLow\NPKI\yessign\USER\[인증서DN명]";
+				//string _basePath			= Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\AppData\LocalLow\NPKI\yessign\USER\[인증서DN명]";
+				string _basePath			= "D:/NPKI/yessign/USER/cn=서성원()001104120210302111002512,ou=NACF,ou=personal4IB,o=yessign,c=kr";
 				string _publicPath			= string.Format(@"{0}\signCert.der", _basePath);
 				string _privatePath			= string.Format(@"{0}\signPri.key", _basePath);
 				byte[] _publicCert			= File.ReadAllBytes(_publicPath);
 				byte[] _privateKey			= File.ReadAllBytes(_privatePath);
 				
 				// Body 추가
-				_rest.AddBody("CertFile", _publicCert);
-				_rest.AddBody("KeyFile", _privateKey);
-				_rest.AddBody("CertPassword", "공동인증서_비밀번호");
+				_rest.AddBody("CertFile", _publicCert, true);
+				_rest.AddBody("KeyFile", _privateKey, true);
+				_rest.AddBody("CertPassword", "공동인증서_비밀번호", true);
 
 				// API 호출
 				string _result				= _rest.Call();

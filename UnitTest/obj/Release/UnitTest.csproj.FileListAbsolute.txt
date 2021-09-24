@@ -25,8 +25,11 @@ D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\Tilko.API.dll
 D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\Tilko.API.pdb
 D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.csprojAssemblyReference.cache
 D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.csproj.CoreCompileInputs.cache
 D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.csproj.CopyComplete
 D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.dll
 D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.pdb
+D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\ko\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\ko\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\DevSource\Tilko.Github\CSharp\UnitTest\bin\Release\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\DevSource\Tilko.Github\CSharp\UnitTest\obj\Release\UnitTest.csproj.AssemblyReference.cache
