@@ -95,18 +95,20 @@ namespace Tilko.API
 					
 					// 틸코 인증 서버에 RSA 공개키 요청
                     string _url                 = string.Format("{0}/api/Auth/GetPublicKey?APIkey={1}", _apiServer, _apiKey);
-					var _response				= _httpClient.GetAsync(_url).Result;
-					var _resContent				= _response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-					_pubKey						= JsonConvert.DeserializeObject<RsaPublicKey>(_resContent.ToString());
-                    if (_pubKey.Status != "OK")
+                    using (var _response = _httpClient.GetAsync(_url).Result)
                     {
-                        throw new Exception(_pubKey.Message);
+                        var _resContent             = _response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+					    _pubKey						= JsonConvert.DeserializeObject<RsaPublicKey>(_resContent.ToString());
+                        if (_pubKey.Status != "OK")
+                        {
+                            throw new Exception(_pubKey.Message);
+                        }
+                        else if (_pubKey.ApiKey != _apiKey)
+                        {
+                            throw new Exception("Requested API key and responsed API key does not match!");
+                        }
+                        _rsaPublicKey               = Convert.FromBase64String(_pubKey.PublicKey);
                     }
-                    else if (_pubKey.ApiKey != _apiKey)
-                    {
-                        throw new Exception("Requested API key and responsed API key does not match!");
-                    }
-                    _rsaPublicKey               = Convert.FromBase64String(_pubKey.PublicKey);
 				}
 
                 // Encrypt AES key
