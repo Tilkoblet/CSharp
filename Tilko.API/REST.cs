@@ -138,7 +138,7 @@ namespace Tilko.API
 		{
 			try
 			{
-                this.AddBody(Key, Value, true);
+                this.AddBody(Key, Value, false);
 			}
 			catch
 			{
@@ -186,7 +186,7 @@ namespace Tilko.API
 		{
 			try
 			{
-                this.AddBody(Key, Value, true);
+                this.AddBody(Key, Value, false);
 			}
 			catch
 			{
@@ -238,7 +238,7 @@ namespace Tilko.API
 		{
 			try
 			{
-                this.AddBody(Key, Value, true);
+                this.AddBody(Key, Value, false);
 			}
 			catch
 			{
