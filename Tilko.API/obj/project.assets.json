@@ -221,7 +221,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.27.21267",
+    "version": "1.0.28.21270",
     "restore": {
       "projectUniqueName": "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
       "projectName": "Tilko.API",

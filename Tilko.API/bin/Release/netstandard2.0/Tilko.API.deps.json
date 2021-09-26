@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Tilko.API/1.0.27.21267": {
+      "Tilko.API/1.0.28.21270": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "13.0.1"
@@ -33,7 +33,7 @@
     }
   },
   "libraries": {
-    "Tilko.API/1.0.27.21267": {
+    "Tilko.API/1.0.28.21270": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
