@@ -12,7 +12,7 @@ namespace UnitTest
 		/// https://tilko.net
 		/// </summary>
 		public static string ApiKey { get { return "[API 키]"; } }
-		
+
 		/// <summary>
 		/// 공동인증서 경로 설정
 		/// 공동인증서는 "C:\Users\[사용자계정]\AppData\LocalLow\NPKI\yessign\USER\[인증서DN명]"에 존재합니다.

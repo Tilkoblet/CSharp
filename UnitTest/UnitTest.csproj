@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Constant.cs" />
     <Compile Include="KR\GO\IROS\등기물건주소검색.cs" />
+    <Compile Include="KR\OR\KCOMWEL\사업장총괄카드조회.cs" />
     <Compile Include="KR\OR\NHIS\건강보험자격득실내역.cs" />
     <Compile Include="KR\OR\NHIS\건강검진내역.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

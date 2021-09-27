@@ -27,6 +27,10 @@ namespace UnitTest.KR.OR.NHIS
 
 				// API 호출
 				string _result				= _rest.Call();
+				if (_rest.HttpStatusCode != System.Net.HttpStatusCode.OK)
+				{
+					throw new Exception(_rest.Message);
+				}
 			}
 			catch (Exception err)
 			{

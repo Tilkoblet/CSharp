@@ -3,10 +3,10 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace UnitTest.KR.OR.NHIS
+namespace UnitTest.KR.OR.KCOMWEL
 {
 	[TestClass]
-	public class 건강검진내역
+	public class 사업장총괄카드조회
 	{
 		[TestMethod]
 		public void TILKO_API()
@@ -16,13 +16,17 @@ namespace UnitTest.KR.OR.NHIS
 				Tilko.API.REST _rest		= new Tilko.API.REST(Constant.ApiKey);
 				_rest.Init();
 
-				// 건강보험공단의 건강검진결과 endPoint 설정
-				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/nhis/ggpab003m0105");
+				// 고용산재토탈서비스의 사업장 총괄카드 조회 endPoint 설정
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/kcomwel/retrievesaeopjangchonggwalcardjh");
 
 				// Body 추가
 				_rest.AddBody("CertFile", File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);
 				_rest.AddBody("KeyFile", File.ReadAllBytes(string.Format(@"{0}\signPri.key", Constant.CertPath)), true);
 				_rest.AddBody("CertPassword", Constant.CertPassword, true);
+				_rest.AddBody("BusinessNumber", "[조회를 원하는 사업자등록번호]", true);
+				_rest.AddBody("UserGroupFlag", "0");			// 0: 사업장, 1: 사무대행
+				_rest.AddBody("IndividualFlag", "1");			// 0: 개인, 1: 법인
+				_rest.AddBody("GwanriNo", "");
 
 				// API 호출
 				string _result				= _rest.Call();
