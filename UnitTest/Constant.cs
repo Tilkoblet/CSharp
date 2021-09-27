@@ -4,6 +4,8 @@ namespace UnitTest
 {
 	public class Constant
 	{
+		public static string ApiHost { get { return "https://api.tilko.net"; } }
+
 		/// <summary>
 		/// API 키
 		/// API 키는 틸코 API 홈페이지에서 발급 받으세요.

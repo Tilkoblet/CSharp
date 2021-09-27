@@ -17,7 +17,7 @@ namespace UnitTest.KR.OR.NHIS
 				_rest.Init();
 				
 				// 건강보험공단의 건강보험자격득실내역 endPoint 설정
-				_rest.SetEndPointUrl("https://api.tilko.net/api/v1.0/nhis/jpzaa00110");
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/nhis/jpzaa00110");
 			
 				// Body 추가
 				_rest.AddBody("CertFile", File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);

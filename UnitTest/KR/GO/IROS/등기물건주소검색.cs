@@ -16,7 +16,7 @@ namespace UnitTest.KR.GO.IROS
 				_rest.Init();
 
 				// 인터넷등기소의 등기물건주소검색 endPoint 설정
-				_rest.SetEndPointUrl("https://api.tilko.net/api/v1.0/iros/risuconfirmsimplec");
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/iros/risuconfirmsimplec");
 
 				// Body 추가
 				_rest.AddBody("Address", "서울특별시 중구 다동길 5");
