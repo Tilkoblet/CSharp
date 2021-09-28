@@ -16,7 +16,7 @@ namespace UnitTest.KR.OR.KCOMWEL
 				Tilko.API.REST _rest		= new Tilko.API.REST(Constant.ApiKey);
 				_rest.Init();
 
-				// 고용산재토탈서비스의 사무수임사업장 내역 조회 endPoint 설정
+				// 고용산재토탈서비스의 사대보험취득신고 endPoint 설정
 				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/kcomwel/samuchwideuksingo");
 
 				// Body 추가
