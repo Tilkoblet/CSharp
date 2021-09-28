@@ -62,6 +62,7 @@
     <Compile Include="KR\OR\KCOMWEL\부과고지보험료조회.cs" />
     <Compile Include="KR\OR\KCOMWEL\근로자고용정보현황조회.cs" />
     <Compile Include="KR\OR\KCOMWEL\사업장총괄카드조회.cs" />
+    <Compile Include="KR\OR\NHIS\병원약국이용이력.cs" />
     <Compile Include="KR\OR\NHIS\건강보험자격득실내역.cs" />
     <Compile Include="KR\OR\NHIS\건강검진내역.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

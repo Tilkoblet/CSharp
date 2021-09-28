@@ -4,6 +4,7 @@
     <id>Tilko.API</id>
     <version>1.0.28.21270</version>
     <authors>Joshua Son</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/Tilkoblet/CSharp</projectUrl>
     <description>초기 스타트업을 위한 손쉬운 보안 모듈 스크래핑 API 서비스 - http://tilko.net</description>
     <releaseNotes>각종 공공 및 금융기관의 공동인증서 로그인이 필요한 데이터 API 제공
