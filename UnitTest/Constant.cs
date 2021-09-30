@@ -23,5 +23,6 @@ namespace UnitTest
 		/// 공동인증서 비밀번호
 		/// </summary>
 		public static string CertPassword { get { return "[인증서 비밀번호]"; } }
+
 	}
 }
