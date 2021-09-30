@@ -37,6 +37,11 @@ namespace Tilko.API
         /// 메시지
         /// </summary>
         public string Message { get; private set; }
+
+        /// <summary>
+        /// API 호출에 소요된 시간
+        /// </summary>
+        public TimeSpan TimeElapsed { get; private set; }
         #endregion
 
 		#region REST : 생성자
@@ -288,9 +293,7 @@ namespace Tilko.API
 				{
 					_httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-                    /*
-					 * 헤더 설정
-					 */
+                    // 헤더 설정
                     foreach (var _item in _headers)
                     {
 					    _httpClient.DefaultRequestHeaders.Add(_item.Key, _item.Value);
@@ -298,11 +301,14 @@ namespace Tilko.API
 
 					// 틸코 데이터 서버에 데이터 요청
 					var _reqContent				= new StringContent(JsonConvert.SerializeObject(_bodies), Encoding.UTF8, "application/json");
+                    DateTime _start             = DateTime.Now;
                     using (var _response = _httpClient.PostAsync(_endPointUrl, _reqContent).Result)
                     {
                         var _resContent             = _response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                        DateTime _end               = DateTime.Now;
 
                         // set public properties
+                        this.TimeElapsed            = (_end - _start);
                         this.HttpStatusCode         = _response.StatusCode;
                         this.Message                = _response.ReasonPhrase;
 
