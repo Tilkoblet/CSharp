@@ -17,6 +17,6 @@ http://tilko.net</releaseNotes>
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\WebDev\Tilko.Github\CSharp\Tilko.API\bin\Debug\netstandard2.0\Tilko.API.dll" target="lib\netstandard2.0\Tilko.API.dll" />
+    <file src="E:\WebSource\CSharp\Tilko.API\bin\Debug\netstandard2.0\Tilko.API.dll" target="lib\netstandard2.0\Tilko.API.dll" />
   </files>
 </package>

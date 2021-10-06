@@ -19,7 +19,7 @@ namespace UnitTest.KR.GO.IROS
 				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/iros/risuconfirmsimplec");
 
 				// Body 추가
-				_rest.AddBody("Address", "서울특별시 중구 다동길 5");
+				_rest.AddBody("Address", "인천광역시 중구 영종대로 90 시에로빌오피스텔");
 				_rest.AddBody("Sangtae", "2");
 				_rest.AddBody("KindClsFlag", "0");
 				_rest.AddBody("Region", "0");
