@@ -1,6 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NewFolder",
+    "\\packages",
+    "\\packages\\NewFolder",
+    "\\packages\\Newtonsoft.Json.13.0.1",
+    "\\TestResults",
+    "\\Tilko.API",
+    "\\UnitTest",
+    "\\UnitTest\\KR",
+    "\\UnitTest\\KR\\OR",
+    "\\UnitTest\\KR\\OR\\NHIS"
   ],
+  "SelectedNode": "\\UnitTest\\KR\\OR\\NHIS\\내가먹는약.cs",
   "PreviewInSolutionExplorer": false
 }
