@@ -50,12 +50,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constant.cs" />
+    <Compile Include="KR\GOV\주민등록증진위여부.cs" />
+    <Compile Include="KR\GO\HIKOREA\외국인등록진위여부.cs" />
+    <Compile Include="KR\GO\EFINE\운전면허진위여부.cs" />
+    <Compile Include="KR\GO\HOMETAX\법인세신고서조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\부가가치세신고서조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\부가가치세납부서조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\원천세신고서조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\원천세납부서조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\종합소득세신고서조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\고지내역조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\부가가치세예정고지세액조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\사업용신용카드누계조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\사업자등록상태조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\수출실적명세서.cs" />
+    <Compile Include="KR\GO\HOMETAX\신용카드매출자료조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\전자세금계산서합계표조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\종합소득세납부서조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\체납내역조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\현금영수증매입총액조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\현금영수증매출총액조회.cs" />
+    <Compile Include="KR\GO\HOMETAX\환급금조회.cs" />
     <Compile Include="KR\GO\IROS\등기신청사건처리현황조회.cs" />
     <Compile Include="KR\GO\IROS\등기부등본조회.cs" />
     <Compile Include="KR\GO\IROS\등기물건주소검색.cs" />
+    <Compile Include="KR\OR\HIRA\질병의심여부조회내역.cs" />
+    <Compile Include="KR\OR\HIRA\내가먹는약.cs" />
+    <Compile Include="KR\OR\INSURE\숨은보험금조회하기.cs" />
     <Compile Include="KR\OR\KCOMWEL\개인별부과고지보험료조회.cs" />
     <Compile Include="KR\OR\KCOMWEL\근로자고용정보현황조회.cs" />
-    <Compile Include="KR\OR\KCOMWEL\민원접수현황선택출력.cs" />
     <Compile Include="KR\OR\KCOMWEL\민원접수현황조회.cs" />
     <Compile Include="KR\OR\KCOMWEL\보수총액신고내역조회.cs" />
     <Compile Include="KR\OR\KCOMWEL\부과고지보험료조회.cs" />
@@ -64,9 +87,12 @@
     <Compile Include="KR\OR\KCOMWEL\사업장총괄카드조회.cs" />
     <Compile Include="KR\OR\KCOMWEL\일용근로자고용정보현황조회.cs" />
     <Compile Include="KR\OR\KCOMWEL\일자리지원금조회.cs" />
-    <Compile Include="KR\OR\NHIS\직장보험료조회.cs" />
-    <Compile Include="KR\OR\NHIS\건강보험자격득실내역.cs" />
-    <Compile Include="KR\OR\NHIS\건강검진내역.cs" />
+    <Compile Include="KR\OR\NHIS\1.건강검진내역.cs" />
+    <Compile Include="KR\OR\NHIS\2.건강보험자격득실내역.cs" />
+    <Compile Include="KR\OR\NHIS\3.국민연금납부내역.cs" />
+    <Compile Include="KR\OR\NHIS\4.병원약국이용이력.cs" />
+    <Compile Include="KR\OR\NHIS\5.직장보험료조회.cs" />
+    <Compile Include="KR\OR\NPS\EDI\국고지원금 확인.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="KR\OR\KCOMWEL\enum.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="KR\OR\CREDIT4U\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

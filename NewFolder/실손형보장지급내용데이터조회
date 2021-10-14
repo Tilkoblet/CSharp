@@ -1,0 +1,38 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Diagnostics;
+using System.IO;
+
+namespace UnitTest.KR.OR.NHIS
+{
+	[TestClass]
+	public class 11대 질병 의심 여부 조회내역
+	{
+		[TestMethod]
+		public void TILKO_API()
+		{
+			try
+			{
+				Tilko.API.REST _rest = new Tilko.API.REST(Constant.ApiKey);
+				_rest.Init();
+
+				// 11대 질병 의심 여부 조회내역
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/hira/suspecteddiseasesget");
+
+				// Body 추가
+				_rest.AddBody("MedicineCodeList", File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);
+				
+				// API 호출
+				string _result = _rest.Call();
+				if (_rest.HttpStatusCode != System.Net.HttpStatusCode.OK)
+				{
+					throw new Exception(_rest.Message);
+				}
+			}
+			catch (Exception err)
+			{
+				Debug.WriteLine(err.Message);
+			}
+		}
+	}
+}
