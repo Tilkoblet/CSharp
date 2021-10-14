@@ -23,13 +23,13 @@ namespace UnitTest.KR.OR.KCOMWEL
 				_rest.AddBody("CertFile"      , File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);
 				_rest.AddBody("KeyFile"       , File.ReadAllBytes(string.Format(@"{0}\signPri.key", Constant.CertPath)), true);
 				_rest.AddBody("CertPassword"  , Constant.CertPassword, true);
-				_rest.AddBody("BusinessNumber", "[조회를 원하는 사업자등록번호]", true);
-				_rest.AddBody("UserGroupFlag" , "1");					// 0: 사업장, 1: 사무대행
-				_rest.AddBody("IndividualFlag", "1");					// 0: 개인, 1: 법인
-				_rest.AddBody("BoheomFg"      , "2");					// 0: 산재, 1: 고용, 2: 전체
-				_rest.AddBody("GwanriNo"      , "[조회를 원하는 관리번호]");
-				_rest.AddBody("DaesangYYFrom" , "2021");
-				_rest.AddBody("DaesangYYTo"   , "2021");
+				_rest.AddBody("BusinessNumber", "", true);				// [암호화] 검색 할 사업자등록번호 또는 주민등록번호(xxxxxxxxxx 또는 xxxxxxxxxxxxx / Base64 인코딩)
+				_rest.AddBody("UserGroupFlag" , "1");                   // 인증서 - 사업장(0)/사무대행(1) 구분
+				_rest.AddBody("IndividualFlag", "1");                   // 인증서 - 개인(0)/법인(1) 구분
+				_rest.AddBody("BoheomFg"      , "2");                   // 보험구분 - 산재(0)/고용(1)/전체(2)
+				_rest.AddBody("GwanriNo"      , "");					// 관리번호
+				_rest.AddBody("DaesangYYFrom" , "2021");				// 대상연도_시작(yyyy)
+				_rest.AddBody("DaesangYYTo"   , "2021");				// 대상연도_종료(yyyy)
 
 				// API 호출  
 				string _result				= _rest.Call();

@@ -16,20 +16,19 @@ namespace UnitTest.KR.OR.KCOMWEL
 				Tilko.API.REST _rest		= new Tilko.API.REST(Constant.ApiKey);
 				_rest.Init();
 
-				// 고용산재토탈의 보수총액 신고내역 조회 endPoint 설정
-				_rest.SetEndPointUrl(Constant.ApiHost + "api/v1.0/kcomwel/selectbosujeopsulist");
+				// 고용산재토탈의 민원접수현황 조회 endPoint 설정
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/kcomwel/retrievejingsuminwon");
 
 				// Body 추가
 				_rest.AddBody("CertFile"      , File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);
 				_rest.AddBody("KeyFile"       , File.ReadAllBytes(string.Format(@"{0}\signPri.key", Constant.CertPath)), true);
 				_rest.AddBody("CertPassword"  , Constant.CertPassword, true);
 				_rest.AddBody("BusinessNumber", "", true);          // [암호화] 검색 할 사업자등록번호 또는 주민등록번호(xxxxxxxxxx 또는 xxxxxxxxxxxxx / Base64 인코딩)
-				_rest.AddBody("UserGroupFlag", "");                 // 인증서 - 사업장(0)/사무대행(1) 구분
-				_rest.AddBody("IndividualFlag", "");                // 인증서 - 개인(0)/법인(1) 구분
-				_rest.AddBody("BoheomYear", "");                    // 보험년도(YYYY)
-				_rest.AddBody("GwanriNo", "");                      // 관리번호
-
-
+				_rest.AddBody("UserGroupFlag", "1");				// 인증서 - 사업장(0)/사무대행(1) 구분
+				_rest.AddBody("IndividualFlag", "1");               // 인증서 - 개인(0)/법인(1) 구분
+				_rest.AddBody("JeopsuDtFrom", "");					// 접수일(시작 - yyyyMMdd)
+				_rest.AddBody("JeopsuDtTo", "");					// 접수일(종료 - yyyyMMdd)
+				_rest.AddBody("JingsuBosangFg", "");				// 민원접수 종류 - 징수(0)/사대공통서식(1)/일자리(2)
 
 				// API 호출  
 				string _result				= _rest.Call();

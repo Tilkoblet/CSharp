@@ -6,7 +6,7 @@ using System.IO;
 namespace UnitTest.KR.OR.NPS.EDI
 {
 	[TestClass]
-	public class 국고지원금확인
+	public class 부과내역조회
 	{
 		[TestMethod]
 		public void TILKO_API()
@@ -16,8 +16,8 @@ namespace UnitTest.KR.OR.NPS.EDI
 				Tilko.API.REST _rest = new Tilko.API.REST(Constant.ApiKey);
 				_rest.Init();
 
-				// 국민연금 EDI의 국고지원금 확인 endPoint 설정
-				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/npsedi/u040209m01");
+				// 국민연금 EDI의 부과내역조회 endPoint 설정
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/npsedi/u040205m01");
 
 				// Body 추가
 				_rest.AddBody("CertFile", File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);

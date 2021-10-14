@@ -17,7 +17,7 @@ namespace UnitTest.KR.OR.KCOMWEL
 				_rest.Init();
 
 				// 고용산재토탈의 근로자 고용정보 현황 조회 endPoint 설정
-				_rest.SetEndPointUrl(Constant.ApiHost + " api/v1.0/kcomwel/selectgeunrojagyiryeok");
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/kcomwel/selectgeunrojagyiryeok");
 
 				// Body 추가
 				_rest.AddBody("CertFile", File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);
