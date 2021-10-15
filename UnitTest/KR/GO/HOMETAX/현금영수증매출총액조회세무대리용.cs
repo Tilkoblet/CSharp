@@ -3,11 +3,11 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace UnitTest.KR.OR.HOMETAX
+namespace UnitTest.KR.GO.HOMETAX
 
 {
 	[TestClass]
-	public class 현금영수증매출총액조회
+	public class 현금영수증매출총액조회세무대리용
 	{
 		[TestMethod]
 		public void TILKO_API()
@@ -18,7 +18,7 @@ namespace UnitTest.KR.OR.HOMETAX
 				_rest.Init();
 
 				// 홈택스의 현금영수증 매출총액 조회 endPoint 설정
-				_rest.SetEndPointUrl(Constant.ApiHost + "/ api/v1.0/hometaxagent/utecrcb027/suimnabseja/hyeongeumyeongsujeung/maechulchongaeg");
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/hometaxagent/utecrcb027/suimnabseja/hyeongeumyeongsujeung/maechulchongaeg");
 
 				// Body 추가
 				_rest.AddBody("CertFile", File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);

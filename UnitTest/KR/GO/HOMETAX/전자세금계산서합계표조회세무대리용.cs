@@ -7,7 +7,7 @@ namespace UnitTest.KR.GO.HOMETAX
 
 {
 	[TestClass]
-	public class 전자세금계산서합계표조회
+	public class 전자세금계산서합계표조회세무대리용
 	{
 		[TestMethod]
 		public void TILKO_API()

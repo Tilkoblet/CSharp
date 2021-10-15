@@ -7,7 +7,7 @@ namespace UnitTest.KR.GO.HOMETAX
 
 {
 	[TestClass]
-	public class 수출실적명세서조회
+	public class 수출실적명세서조회세무대리용
 	{
 		[TestMethod]
 		public void TILKO_API()

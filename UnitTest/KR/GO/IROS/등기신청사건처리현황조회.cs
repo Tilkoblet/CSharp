@@ -20,11 +20,12 @@ namespace UnitTest.KR.GO.IROS
 				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/iros/revtwelcomeevtc");
 
 				// Body 추가
-				_rest.AddBody("IrosID", "", true); // [암호화] iros.go.kr 로그인 ID(Base64 인코딩)
-				_rest.AddBody("IrosPwd", "", true); // [암호화] iros.go.kr 로그인 패스워드(Base64 인코딩)
-				_rest.AddBody("UniqueNo", ""); // 부동산 고유번호('-'을 제외한 14자리)
-				_rest.AddBody("InsRealClsCd", ""); // 구분(공백시 건물) 토지 : 0 / 건물 : 1 / 집합건물 : 2
-
+				_rest.AddBody("IrosID", "", true);       // [암호화] iros.go.kr 로그인 ID(Base64 인코딩)
+				_rest.AddBody("IrosPwd", "", true);      // [암호화] iros.go.kr 로그인 패스워드(Base64 인코딩)
+				_rest.AddBody("UniqueNo", "");           // 부동산 고유번호('-'을 제외한 14자리)
+				_rest.AddBody("InsRealClsCd", "");       // 구분(공백시 건물) 토지 : 0 / 건물 : 1 / 집합건물 : 2
+				_rest.AddBody("A103Name", "");           // 소유자명
+														
 				// API 호출
 				string _result = _rest.Call();
 				if (_rest.HttpStatusCode != System.Net.HttpStatusCode.OK)

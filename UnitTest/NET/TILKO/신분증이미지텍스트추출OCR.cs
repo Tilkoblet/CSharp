@@ -3,10 +3,10 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace UnitTest.KR.OR.HIRA
+namespace UnitTest.NET.TILKO
 {
 	[TestClass]
-	public class 질병의심여부조회내역
+	public class 신분증이미지텍스트추출OCR
 	{
 		[TestMethod]
 		public void TILKO_API()
@@ -16,11 +16,12 @@ namespace UnitTest.KR.OR.HIRA
 				Tilko.API.REST _rest = new Tilko.API.REST(Constant.ApiKey);
 				_rest.Init();
 
-				// 건강보험심사평가원의 11대 질병 의심 여부 조회내역
-				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/hira/suspecteddiseasesget");
+				// 틸코닷넷의 신분증이미지 텍스트 추출(OCR) endPoint 설정
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/tilko/ocr/license");
 
 				// Body 추가
-				_rest.AddBody("MedicineCodeList", "", true);    // 내가먹는약 서비스의 약품코드(예 : {"medicine_code_list" : ["660700010","643503630","645903041","648104500","649801381"]})
+				_rest.AddBody("Base64", "", true);     // [암호화] 신분증 이미지 Base64
+				_rest.AddBody("LicenseType", "");      // 신분증 구분 주민등록증 : 0 / 운전면허증 : 1 / 외국인등록증 : 2
 
 				// API 호출
 				string _result = _rest.Call();

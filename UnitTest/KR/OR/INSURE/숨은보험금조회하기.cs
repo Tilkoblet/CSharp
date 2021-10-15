@@ -17,7 +17,7 @@ namespace UnitTest.KR.OR.INSURE
 				_rest.Init();
 
 				// 생명보험협회의 숨은 보험금 조회하기 endPoint 설정
-				_rest.SetEndPointUrl(Constant.ApiHost + "apiapi/v1.0/insure/resultihidnumdetail");
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/insure/resultihidnumdetail");
 
 				// Body 추가
 				_rest.AddBody("CertFile", File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);

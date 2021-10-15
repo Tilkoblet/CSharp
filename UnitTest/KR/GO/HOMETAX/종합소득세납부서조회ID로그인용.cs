@@ -6,7 +6,7 @@ using System.IO;
 namespace UnitTest.KR.GO.HOMETAX
 {
 	[TestClass]
-	public class 종합소득세납부서조회
+	public class 종합소득세납부서조회ID로그인용
 	{
 		[TestMethod]
 		public void TILKO_API()

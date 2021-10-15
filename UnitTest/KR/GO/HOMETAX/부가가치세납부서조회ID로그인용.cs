@@ -3,11 +3,12 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace UnitTest.KR.OR.HOMETAX
+namespace UnitTest.KR.GO.HOMETAX
+
 
 {
 	[TestClass]
-	public class 부가가치세납부서조회
+	public class 부가가치세납부서조회ID로그인용
 	{
 		[TestMethod]
 		public void TILKO_API()
@@ -18,7 +19,7 @@ namespace UnitTest.KR.OR.HOMETAX
 				_rest.Init();
 
 				// 홈택스의 부가가치세 납부서 조회 endPoint 설정
-				_rest.SetEndPointUrl(Constant.ApiHost + "api/v1.0/hometaxidlogin/uternaaz110/bugagachise/napbu");
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/hometaxidlogin/uternaaz110/bugagachise/napbu");
 
 				// Body 추가
 				_rest.AddBody("UserId", "", true);                 // [암호화] 홈택스 ID(Base64 인코딩) 

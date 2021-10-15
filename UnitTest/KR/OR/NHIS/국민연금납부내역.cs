@@ -18,18 +18,18 @@ namespace UnitTest.KR.OR.NHIS
 				_rest.Init();
 
 				// 건강보험공단의 국민연금납부내역 endPoint 설정
-				_rest.SetEndPointUrl(Constant.ApiHost + " api/v1.0/nhis/jpaca00101/gugminyeongeum");
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/nhis/jpaca00101/gugminyeongeum");
 
 				// Body 추가
 				_rest.AddBody("CertFile", File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);
 				_rest.AddBody("KeyFile", File.ReadAllBytes(string.Format(@"{0}\signPri.key", Constant.CertPath)), true);
 				_rest.AddBody("CertPassword", Constant.CertPassword, true);
-				_rest.AddBody("Year", "" );               // 검색년도(yyyy)
+				_rest.AddBody("Year", "");                // 검색년도(yyyy)
 				_rest.AddBody("StartMonth", "");          // 검색 시작 월(MM)
-				_rest.AddBody("EndMonth", "");
+				_rest.AddBody("EndMonth", "");            // 검색 종료 월(MM)
 
-			    // API 호출
-			string _result = _rest.Call();
+				// API 호출
+				string _result = _rest.Call();
 				if (_rest.HttpStatusCode != System.Net.HttpStatusCode.OK)
 				{
 					throw new Exception(_rest.Message);

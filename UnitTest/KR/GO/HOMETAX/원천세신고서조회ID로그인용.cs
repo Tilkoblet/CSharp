@@ -3,11 +3,11 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace UnitTest.KR.OR.HOMETAX
+namespace UnitTest.KR.GO.HOMETAX
 
 {
 	[TestClass]
-	public class 원천세신고서조회
+	public class 원천세신고서조회ID로그인용
 	{
 		[TestMethod]
 		public void TILKO_API()
@@ -18,7 +18,7 @@ namespace UnitTest.KR.OR.HOMETAX
 				_rest.Init();
 
 				// 홈택스의 원천세 신고서 조회 endPoint 설정
-				_rest.SetEndPointUrl(Constant.ApiHost + "api/v1.0/hometaxidlogin/uternaaz110/woncheonse/singo");
+				_rest.SetEndPointUrl(Constant.ApiHost + "/api/v1.0/hometaxidlogin/uternaaz110/woncheonse/singo");
 
 				// Body 추가
 				_rest.AddBody("UserId", "", true);                         // [암호화] 홈택스 ID(Base64 인코딩)
