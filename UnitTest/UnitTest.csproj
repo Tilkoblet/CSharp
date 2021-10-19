@@ -53,6 +53,19 @@
     <Compile Include="KR\GOV\주민등록증진위여부.cs" />
     <Compile Include="KR\GO\HIKOREA\외국인등록진위여부.cs" />
     <Compile Include="KR\GO\EFINE\운전면허진위여부.cs" />
+    <Compile Include="KR\GO\HOMETAX\법인세신고서조회세무대리용.cs" />
+    <Compile Include="KR\GO\HOMETAX\법인세신고서조회인증서로그인용.cs" />
+    <Compile Include="KR\GO\HOMETAX\부가가치세납부서조회세무대리용.cs" />
+    <Compile Include="KR\GO\HOMETAX\부가가치세납부서조회인증서로그인용.cs" />
+    <Compile Include="KR\GO\HOMETAX\부가가치세신고서조회세무대리용.cs" />
+    <Compile Include="KR\GO\HOMETAX\부가가치세신고서조회인증서로그인용.cs" />
+    <Compile Include="KR\GO\HOMETAX\원천세납부서조회ID로그인용.cs" />
+    <Compile Include="KR\GO\HOMETAX\원천세납부서조회인증서로로그인용.cs" />
+    <Compile Include="KR\GO\HOMETAX\원천세신고서조회ID로그인용.cs" />
+    <Compile Include="KR\GO\HOMETAX\원천세신고서조회세무대리용.cs" />
+    <Compile Include="KR\GO\HOMETAX\원천세신고서조회인증서로그인용.cs" />
+    <Compile Include="KR\GO\HOMETAX\종합소득세납부서조회세무대리용.cs" />
+    <Compile Include="KR\GO\HOMETAX\종합소득세납부서조회인증서로그인용.cs" />
     <Compile Include="KR\GO\HOMETAX\종합소득세신고서조회세무대리용.cs" />
     <Compile Include="KR\GO\HOMETAX\법인세신고서조회ID로그인용.cs" />
     <Compile Include="KR\GO\HOMETAX\부가가치세신고서조회ID로그인용.cs" />
@@ -66,6 +79,7 @@
     <Compile Include="KR\GO\HOMETAX\신용카드매출자료조회세무대리용.cs" />
     <Compile Include="KR\GO\HOMETAX\전자세금계산서합계표조회세무대리용.cs" />
     <Compile Include="KR\GO\HOMETAX\종합소득세납부서조회ID로그인용.cs" />
+    <Compile Include="KR\GO\HOMETAX\종합소득세신고서조회인증서로그인용.cs" />
     <Compile Include="KR\GO\HOMETAX\체납내역조회세무대리용.cs" />
     <Compile Include="KR\GO\HOMETAX\현금영수증매입총액조회세무대리용.cs" />
     <Compile Include="KR\GO\HOMETAX\현금영수증매출총액조회세무대리용.cs" />
