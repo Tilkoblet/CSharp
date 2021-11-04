@@ -23,12 +23,12 @@ namespace UnitTest.KR.OR.KCOMWEL
 				_rest.AddBody("CertFile"      , File.ReadAllBytes(string.Format(@"{0}\signCert.der", Constant.CertPath)), true);
 				_rest.AddBody("KeyFile"       , File.ReadAllBytes(string.Format(@"{0}\signPri.key", Constant.CertPath)), true);
 				_rest.AddBody("CertPassword"  , Constant.CertPassword, true);
-				_rest.AddBody("BusinessNumber", "", true);          // [암호화] 검색 할 사업자등록번호 또는 주민등록번호(xxxxxxxxxx 또는 xxxxxxxxxxxxx / Base64 인코딩)
+				_rest.AddBody("BusinessNumber", "2248167722", true);          // [암호화] 검색 할 사업자등록번호 또는 주민등록번호(xxxxxxxxxx 또는 xxxxxxxxxxxxx / Base64 인코딩)
 				_rest.AddBody("YYYY"          , "2021");            // 조회년도(yyyy)
 				_rest.AddBody("MM"            , "09");              // 조회월(MM)
-				_rest.AddBody("UserGroupFlag" , "0");               // 인증서 - 0: 사업장, 1: 사무대행
+				_rest.AddBody("UserGroupFlag" , "1");               // 인증서 - 0: 사업장, 1: 사무대행
 				_rest.AddBody("IndividualFlag", "1");               // 인증서 - 0: 개인, 1: 법인
-				_rest.AddBody("GwanriNo"      , "");                // 관리번호
+				_rest.AddBody("GwanriNo"      , "49379001870");                // 관리번호
 
 				// API 호출  
 				string _result				= _rest.Call();

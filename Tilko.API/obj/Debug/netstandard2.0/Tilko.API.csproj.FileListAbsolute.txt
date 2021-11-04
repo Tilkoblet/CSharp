@@ -27,3 +27,13 @@ E:\WebSource\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.AssemblyInfo.cs
 E:\WebSource\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.csproj.CoreCompileInputs.cache
 E:\WebSource\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.dll
 E:\WebSource\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.pdb
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\bin\Debug\netstandard2.0\Tilko.API.deps.json
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\bin\Debug\netstandard2.0\Tilko.API.dll
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\bin\Debug\netstandard2.0\Tilko.API.pdb
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.GeneratedMSBuildEditorConfig.editorconfig
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.AssemblyInfoInputs.cache
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.AssemblyInfo.cs
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.csproj.CoreCompileInputs.cache
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.dll
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.pdb
+E:\WebDev\Tilko.GITHUB\CSharp\Tilko.API\obj\Debug\netstandard2.0\Tilko.API.csproj.AssemblyReference.cache

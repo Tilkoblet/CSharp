@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\WebSource\\CSharp\\Tilko.API\\Tilko.API.csproj": {}
+    "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\Tilko.API.csproj": {}
   },
   "projects": {
-    "E:\\WebSource\\CSharp\\Tilko.API\\Tilko.API.csproj": {
+    "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\Tilko.API.csproj": {
       "version": "1.0.28.21270",
       "restore": {
-        "projectUniqueName": "E:\\WebSource\\CSharp\\Tilko.API\\Tilko.API.csproj",
+        "projectUniqueName": "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\Tilko.API.csproj",
         "projectName": "Tilko.API",
-        "projectPath": "E:\\WebSource\\CSharp\\Tilko.API\\Tilko.API.csproj",
+        "projectPath": "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\Tilko.API.csproj",
         "packagesPath": "C:\\Users\\yu.lee\\.nuget\\packages\\",
-        "outputPath": "E:\\WebSource\\CSharp\\Tilko.API\\obj\\",
+        "outputPath": "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yu.lee\\AppData\\Roaming\\NuGet\\NuGet.Config",

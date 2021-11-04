@@ -14,7 +14,7 @@ namespace UnitTest.KR.GO.HOMETAX
 		{
 			try
 			{
-				Tilko.API.REST = new Tilko.API.REST(Constant.ApiKey);
+				Tilko.API.REST _rest = new Tilko.API.REST(Constant.ApiKey);
 				_rest.Init();
 
 				// 홈택스의 원천세 신고서 조회 - 세무대리용 endPoint 설정
