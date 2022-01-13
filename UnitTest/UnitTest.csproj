@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constant.cs" />
+    <Compile Include="KR\GOV\간편인증요청.cs" />
+    <Compile Include="KR\GOV\주민등록증진위여부-간편인증용.cs" />
     <Compile Include="KR\GOV\주민등록증진위여부.cs" />
     <Compile Include="KR\GO\HIKOREA\외국인등록진위여부.cs" />
     <Compile Include="KR\GO\EFINE\운전면허진위여부.cs" />
@@ -104,6 +106,7 @@
     <Compile Include="KR\OR\HIRA\십일대질병의심여부조회내역.cs" />
     <Compile Include="KR\OR\HIRA\내가먹는약.cs" />
     <Compile Include="KR\OR\INSURE\숨은보험금조회하기.cs" />
+    <Compile Include="KR\OR\KCOMWEL\사업장요율조회.cs" />
     <Compile Include="KR\OR\KCOMWEL\사대보험상실신고.cs" />
     <Compile Include="KR\OR\KCOMWEL\민원접수현황선택출력.cs" />
     <Compile Include="KR\OR\KCOMWEL\개인별부과고지보험료조회.cs" />
@@ -134,7 +137,6 @@
     <Compile Include="KR\OR\NPS\EDI\국민연금보험료결정내역.cs" />
     <Compile Include="KR\OR\NPS\EDI\국고지원금확인.cs" />
     <Compile Include="KR\OR\NPS\EDI\소급분확인.cs" />
-    <Compile Include="KR\OR\NHIS\부과내역조회-사업장.cs" />
     <Compile Include="KR\OR\NPS\EDI\위임사업장선택조회.cs" />
     <Compile Include="KR\OR\NHIS\EDI\부과내역조회-사업장.cs" />
     <Compile Include="KR\OR\NHIS\EDI\부과내역조회-가입자.cs" />
