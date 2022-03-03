@@ -121,6 +121,7 @@
     <Compile Include="KR\OR\KCOMWEL\일자리지원금조회.cs" />
     <Compile Include="KR\OR\NHIS\EDI\위임사업장선택조회.cs" />
     <Compile Include="KR\OR\NHIS\EDI\받은문서리스트조회.cs" />
+    <Compile Include="KR\OR\NHIS\건강검진내역-간편인증용.cs" />
     <Compile Include="KR\OR\NHIS\병원약국이용이력-간편인증용.cs" />
     <Compile Include="KR\OR\NHIS\건강검진내역.cs" />
     <Compile Include="KR\OR\NHIS\병원약국이용이력.cs" />

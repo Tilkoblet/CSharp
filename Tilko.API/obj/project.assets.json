@@ -222,11 +222,11 @@
   "project": {
     "version": "1.0.28.21270",
     "restore": {
-      "projectUniqueName": "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
+      "projectUniqueName": "D:\\WebDev\\Tilko.Github\\cs\\Tilko.API\\Tilko.API.csproj",
       "projectName": "Tilko.API",
-      "projectPath": "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
+      "projectPath": "D:\\WebDev\\Tilko.Github\\cs\\Tilko.API\\Tilko.API.csproj",
       "packagesPath": "C:\\Users\\seongwon.seo\\.nuget\\packages\\",
-      "outputPath": "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\obj\\",
+      "outputPath": "D:\\WebDev\\Tilko.Github\\cs\\Tilko.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\seongwon.seo\\AppData\\Roaming\\NuGet\\NuGet.Config",

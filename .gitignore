@@ -364,6 +364,8 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
+# Custom
+.vs/
 Tilko.API/bin/
 Tilko.API/obj/
 UnitTest/obj/
