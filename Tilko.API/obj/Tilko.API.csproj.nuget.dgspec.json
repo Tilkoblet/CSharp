@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\Tilko.API.csproj": {}
+    "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj": {}
   },
   "projects": {
-    "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\Tilko.API.csproj": {
+    "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj": {
       "version": "1.0.28.21270",
       "restore": {
-        "projectUniqueName": "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\Tilko.API.csproj",
+        "projectUniqueName": "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
         "projectName": "Tilko.API",
-        "projectPath": "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\Tilko.API.csproj",
-        "packagesPath": "C:\\Users\\yu.lee\\.nuget\\packages\\",
-        "outputPath": "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\obj\\",
+        "projectPath": "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
+        "packagesPath": "C:\\Users\\seongwon.seo\\.nuget\\packages\\",
+        "outputPath": "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yu.lee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\seongwon.seo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Lo2GhyloisDUbjIXoK/Cb3IvBEddc7zjwnG1ztrYthJw3+5BvHjaPLipe5dwgPfvf/okG2A7suDpIKuX6xylnA==",
+  "dgSpecHash": "1p9uup7rOyPZn+vOb2CsqQwfQfFPg/Wct0nOWf8wwU9jEoP6sFmh5gCMfGPLt7hQ8hVpFQT4e7cQvQO6jyZUbA==",
   "success": true,
-  "projectFilePath": "E:\\WebDev\\Tilko.GITHUB\\CSharp\\Tilko.API\\Tilko.API.csproj",
+  "projectFilePath": "D:\\WebDev\\Tilko.Github\\CSharp\\Tilko.API\\Tilko.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\yu.lee\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\yu.lee\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\yu.lee\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\seongwon.seo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\seongwon.seo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\seongwon.seo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }
