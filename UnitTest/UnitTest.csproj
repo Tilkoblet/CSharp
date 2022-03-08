@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.1.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -50,6 +53,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constant.cs" />
@@ -147,6 +151,12 @@
     <Compile Include="KR\OR\CREDIT4U\받은문서리스트조회.cs" />
     <Compile Include="NET\TILKO\신분증이미지텍스트추출OCR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestCase5.cs" />
+    <Compile Include="TestCase4_2.cs" />
+    <Compile Include="TestCase4_1.cs" />
+    <Compile Include="TestCase3.cs" />
+    <Compile Include="TestCase2.cs" />
+    <Compile Include="TestCase1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
