@@ -59,9 +59,13 @@
     <Compile Include="Constant.cs" />
     <Compile Include="kr\gov\건축물대장발급_정부24.cs" />
     <Compile Include="kr\gov\건축물대장열람_정부24.cs" />
+    <Compile Include="kr\gov\임야대장등본교부_정부24.cs" />
+    <Compile Include="kr\gov\임야대장열람_정부24.cs" />
     <Compile Include="kr\gov\정부24간편인증요청_간편인증용.cs" />
     <Compile Include="kr\gov\주민등록증진위여부_간편인증용.cs" />
     <Compile Include="kr\gov\주민등록증진위여부_정부24.cs" />
+    <Compile Include="kr\gov\토지대장등본교부_정부24.cs" />
+    <Compile Include="kr\gov\토지대장열람_정부24.cs" />
     <Compile Include="kr\go\efine\운전면허진위여부_경찰청교통민원24.cs" />
     <Compile Include="kr\go\hikorea\외국인등록진위여부_HiKorea.cs" />
     <Compile Include="kr\go\hometax\고지내역조회_세무대리용.cs" />
@@ -126,6 +130,8 @@
     <Compile Include="kr\go\hometax\현금영수증매출총액조회_세무대리용.cs" />
     <Compile Include="kr\go\hometax\홈택스간편인증요청_간편인증용.cs" />
     <Compile Include="kr\go\hometax\환급금조회_세무대리용.cs" />
+    <Compile Include="kr\go\hometax\연말정산간소화자료의료비조회_간편인증용.cs" />
+    <Compile Include="kr\go\hometax\연말정산간소화자료의료비조회_인증서용.cs" />
     <Compile Include="kr\go\iros\등기물건주소검색_인터넷등기소.cs" />
     <Compile Include="kr\go\iros\등기부등본PDF발급_인터넷등기소.cs" />
     <Compile Include="kr\go\iros\등기부등본조회_인터넷등기소.cs" />
