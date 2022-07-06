@@ -56,7 +56,10 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="com\kbstar\obiz\거래내역조회_KB국민은행기업뱅킹.cs" />
+    <Compile Include="com\nonghyup\ibz\거래내역조회_NH농협은행기업뱅킹.cs" />
     <Compile Include="Constant.cs" />
+    <Compile Include="kr\co\ibk\kiup\거래내역조회_IBK기업은행기업뱅킹.cs" />
     <Compile Include="kr\gov\건축물대장발급_정부24.cs" />
     <Compile Include="kr\gov\건축물대장열람_정부24.cs" />
     <Compile Include="kr\gov\임야대장등본교부_정부24.cs" />
@@ -90,6 +93,8 @@
     <Compile Include="kr\go\hometax\사업자등록상태조회_홈택스.cs" />
     <Compile Include="kr\go\hometax\수출실적명세서조회_세무대리용.cs" />
     <Compile Include="kr\go\hometax\신용카드매출자료조회_세무대리용.cs" />
+    <Compile Include="kr\go\hometax\연말정산간소화자료의료비조회_간편인증용.cs" />
+    <Compile Include="kr\go\hometax\연말정산간소화자료의료비조회_인증서용.cs" />
     <Compile Include="kr\go\hometax\원천세납부서조회_ID로그인용.cs" />
     <Compile Include="kr\go\hometax\원천세납부서조회_간편인증용.cs" />
     <Compile Include="kr\go\hometax\원천세납부서조회_세무대리용.cs" />
@@ -130,8 +135,6 @@
     <Compile Include="kr\go\hometax\현금영수증매출총액조회_세무대리용.cs" />
     <Compile Include="kr\go\hometax\홈택스간편인증요청_간편인증용.cs" />
     <Compile Include="kr\go\hometax\환급금조회_세무대리용.cs" />
-    <Compile Include="kr\go\hometax\연말정산간소화자료의료비조회_간편인증용.cs" />
-    <Compile Include="kr\go\hometax\연말정산간소화자료의료비조회_인증서용.cs" />
     <Compile Include="kr\go\iros\등기물건주소검색_인터넷등기소.cs" />
     <Compile Include="kr\go\iros\등기부등본PDF발급_인터넷등기소.cs" />
     <Compile Include="kr\go\iros\등기부등본조회_인터넷등기소.cs" />
@@ -160,6 +163,9 @@
     <Compile Include="kr\or\kcomwel\total\일용직신고_고용산재토탈.cs" />
     <Compile Include="kr\or\kcomwel\total\일자리안정자금신청_고용산재토탈.cs" />
     <Compile Include="kr\or\kcomwel\total\일자리지원금조회_고용산재토탈.cs" />
+    <Compile Include="kr\or\longtermcare\심사지급통보서조회_장기요양보험공단.cs" />
+    <Compile Include="kr\or\longtermcare\인건비비율미반영금액자료조회_장기요양보험공단.cs" />
+    <Compile Include="kr\or\longtermcare\청구내역상세조회_장기요양보험공단.cs" />
     <Compile Include="kr\or\nhis\edi\받은문서리스트조회_국민건강보험공단EDI.cs" />
     <Compile Include="kr\or\nhis\edi\보낸문서리스트조회_국민건강보험공단EDI.cs" />
     <Compile Include="kr\or\nhis\edi\부과내역조회가입자_국민건강보험공단EDI.cs" />
