@@ -199,6 +199,7 @@
     <Compile Include="kr\or\nps\edi\위임사업장선택조회_국민연금EDI.cs" />
     <Compile Include="net\tilko\신분증이미지텍스트추출OCR_Tilkoblet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestCase6.cs" />
     <Compile Include="TestCase5.cs" />
     <Compile Include="TestCase4_2.cs" />
     <Compile Include="TestCase4_1.cs" />
